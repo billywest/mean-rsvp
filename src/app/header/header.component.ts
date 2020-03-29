@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from "@angular/core";
+import { AuthService } from "./../auth/auth.service";
 import { Router, NavigationStart } from "@angular/router";
 import { filter } from "rxjs/operators";
 
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
   @Output() navToggled = new EventEmitter();
   navOpen = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, public auth: AuthService) {}
 
   ngOnInit(): void {
     // If nav is open after routing, close it
