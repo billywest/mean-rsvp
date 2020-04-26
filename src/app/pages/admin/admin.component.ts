@@ -1,11 +1,11 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import { Title } from "@angular/platform-browser";
-import { AuthService } from "./../../auth/auth.service";
-import { ApiService } from "./../../core/api.service";
-import { UtilsService } from "./../../core/utils.service";
-import { FilterSortService } from "./../../core/filter-sort.service";
+import { AuthService } from "../../auth/auth.service";
+import { ApiService } from "../../core/api.service";
+import { UtilsService } from "../../core/utils.service";
+import { FilterSortService } from "../../core/filter-sort.service";
 import { Subscription } from "rxjs";
-import { EventModel } from "./../../core/models/event.model";
+import { EventModel } from "../../core/models/event.model";
 
 @Component({
   selector: "app-admin",
